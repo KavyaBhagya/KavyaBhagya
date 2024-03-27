@@ -1,0 +1,27 @@
+class Hospital {
+  String patientName;
+  int patientid;
+  static String DocName="Dr.Murthy";
+  void setHospital(String PN,int id)
+  {
+    patientName=PN;
+    patientid=pid;
+  }
+  String getpatientName()
+  {
+    return patientName ;
+  } 
+  int getpatientid()
+  {
+    return patientid;
+   }
+}
+ public class DemoScopeofVariables{
+    public static void main (String args[])
+    {
+      String HospitalName="Apollo Hospital";
+      Hospital patient1=new Hospital ();
+      patient1.setHospital("Anita Joseph",101);
+      System.out.println.("the patient"+patient1.getpatientName()+"with the Id"+patient1.getpatient()+"is treated by"+patient1.DocName+"at"+hospitalName);
+    }
+}
