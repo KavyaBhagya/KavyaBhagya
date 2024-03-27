@@ -1,0 +1,31 @@
+class values
+{
+    byte Byte;
+    int Integer;
+    long Long;
+    short Short;
+     Boolean Boolean;
+     float  Float;
+     char ch;
+     double Double;
+     void getvalues()
+     {
+         System.out.println("The default value of primitive data type Byte:"+Byte);
+         System.out.println("The default value of primitive data type integer:"+Integer);
+         System.out.println("The default value of primitive data type long:"+Long);
+         System.out.println("The default value of primitive data type short:"+Short);
+         System.out.println("The default value of primitive data type Boolean:"+Boolean);
+         System.out.println("The default value of string:"+String);
+         System.out.println("The default value of primitive data type float:"+Float);
+         System.out.println("The default value of primitive data type char:"+ch);
+         System.out.println("The default value of primitive data type double:"+Double);
+     }
+}
+public class defaultvalues
+{
+    public static void main (String args[])
+    {
+        values var=new values ();
+        var.getvalues();
+    }
+}
