@@ -1,0 +1,66 @@
+public class Car {
+    // Attributes
+    private String make;
+    private String model;
+    private int year;
+
+    // Constructor
+    public Car() {
+        // Default constructor
+    }
+
+    // Parameterized constructor
+    public Car(String make, String model, int year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+
+    // Method to display car details
+    public void displayDetails() {
+        System.out.println("Car details:");
+        System.out.println("Make: " + make);
+        System.out.println("Model: " + model);
+        System.out.println("Year: " + year);
+    }
+
+    // Methods to update attributes
+    public void updateMake(String newMake) {
+        this.make = newMake;
+    }
+
+    public void updateModel(String newModel) {
+        this.model = newModel;
+    }
+
+    public void updateYear(int newYear) {
+        this.year = newYear;
+    }
+
+    // Main method for testing
+    public static void main(String[] args) {
+        // Create an instance of the Car class using default constructor
+        Car myCar = new Car();
+
+        // Set attributes using setter methods
+        myCar.updateMake("Toyota");
+        myCar.updateModel("Corolla");
+        myCar.updateYear(2022);
+
+        // Access members and display car details
+        myCar.displayDetails();
+    }
+}
+[22/04, 3:08 PM] Divya: java -cp /tmp/V2ma8degkw/Car
+
+Car details:
+
+Make: Toyota
+
+Model: Corolla
+
+Year: 2022
+
+
+
+=== Code Execution Successful===
